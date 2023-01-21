@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+.navbar{
+	background-color: lightsalmon;
+	padding: 25px;
+	text-align: center;	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header_logo_link{
+	margin-left: 0%;
+	color: black;
+	text-decoration: none;
+	font-family: monospace;
+	font-weight: 700;
+	font-size: 1em;
+}
+#menu-bar{
+	font-size: 3rem;
+	cursor: pointer;
+	border: .1rem solid;
+	padding: .5rem 1.5rem;
+	display: none;
+}
+.navbar a{
+	font-family:monospace;
+	color:#c4c0c1;
+	font-size: 15px;
+	text-decoration: none;
+	padding: 10px;
+}
+.wrapper{
+	background-color: darkblue;
+	padding: 20px;
+	text-align: center;
+	color:darkblue;
+
+}
+.home{
+	align-items: center;
+	text-align: center;
+	margin: 0;
+	max-width: 1000%;
+	background-position: 1fr;
+	background-repeat: no-repeat;
+	background-color: white;
+	background-image: url("https://img.freepik.com/free-photo/banquet-table-with-snacks_144627-18361.jpg?size=626&ext=jpg&ga=GA1.2.1005796644.1652720181") no-repeat center center/cover;
+	
+}
+.home::before{
+	content: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url("https://img.freepik.com/free-photo/banquet-table-with-snacks_144627-18361.jpg?size=626&ext=jpg&ga=GA1.2.1005796644.1652720181") no-repeat center center/cover;
+
+}
+.home .image img{
+	width: 20%;
+	padding: 1rem;
+	animation: float 3s linear infinite;
+}
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+p{
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 2em;
+	font-weight:800;
+	color:rosybrown;
+}
+aS{
+	font-family: 'Courgette', cursive;
+	font-size: 2em;
+	font-weight:800;
+	color: lightsalmon;
+
+}
+@keyframes text-pop-up-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+
+
+@keyframes float{
+	0%, 100%{
+		transform: translateY(0rem);
+	}
+	50%{
+		transform: translateY(10px);
+	}
+}
+
+.container{
+	background-color: lightcoral;
+
+}
+.home button{
+	padding: 10px;
+	font-size: 17px;
+	background: #c23843;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	float: centre;
+	margin-top: 25px;
+}
+
+/*media queries*/
+
+@media(max-width: 991px){
+	html{
+		font-size: 55%;
+
+	}
+}
+
+
+@media(max-width: 768px){
+	#menu-bar{
+		display: initial;
+	}
+.navbar{
+	position: absolute;
+	top: 100% ; left: 0; right: 0;
+	border-top: .1rem solid;
+
+}	
+.navbar a{
+	margin: 1.5rem;
+	padding: 1.5rem;
+	display: block;
+	border: .2rem solid;
+	border-left: .5rem solid;
+}
+}
